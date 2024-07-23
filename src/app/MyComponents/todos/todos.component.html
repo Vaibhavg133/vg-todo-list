@@ -1,3 +1,5 @@
-<ul *ngFor="let myTodo of todos">
-    <li>{{myTodo.sno}} - {{myTodo.title}} - {{myTodo.description}} - {{myTodo.active}}</li>
-</ul>
+<div *ngFor="let myTodo of todos">
+    <app-todo-item [myTodo]="myTodo"></app-todo-item>
+    <!-- <li><span>{{myTodo.sno}} {{myTodo.title}}</span><br>
+        {{myTodo.description}}</li> -->
+</div>
