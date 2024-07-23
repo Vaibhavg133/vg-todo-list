@@ -1,5 +1,5 @@
 <div *ngFor="let myTodo of todos">
-    <app-todo-item [myTodo]="myTodo" (todoDelete)="todoDelete($event)"></app-todo-item>
+    <app-todo-item [myTodo]="myTodo" (todoDelete)="deleteTodo($event)"></app-todo-item>
     <!-- <li><span>{{myTodo.sno}} {{myTodo.title}}</span><br>
         {{myTodo.description}}</li> -->
 </div>
