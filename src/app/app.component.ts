@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet,RouterLink, Router } from '@angular/router';
 import { TodosComponent } from "./MyComponents/todos/todos.component";
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TodosComponent],
+  imports: [RouterOutlet, TodosComponent, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
